@@ -1,0 +1,11 @@
+# Temporary/build files
+scripts/teamsData.json
+assets/temp/
+logos.zip
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

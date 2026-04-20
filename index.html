@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC 26 Team Randomizer</title>
+    <meta name="description" content="Premium random team generator for EA Sports FC 26. Select by league, country, or section.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FC 26 Randomizer</h1>
+            <p>Select your criteria and find your next challenge</p>
+        </header>
+
+        <main>
+            <section class="card selection-card">
+                <div class="selection-grid">
+                    <div class="form-group">
+                        <label for="section-select">Section</label>
+                        <select id="section-select">
+                            <option value="all">All Teams</option>
+                            <option value="leagues">Leagues</option>
+                            <option value="national">National Teams</option>
+                            <option value="row">Rest of World</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="country-group" style="display: none;">
+                        <label for="country-select">Country</label>
+                        <select id="country-select">
+                            <option value="any">Any Country</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="league-group" style="display: none;">
+                        <label for="league-select">League</label>
+                        <select id="league-select">
+                            <option value="any">Any League</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="randomizer-stage">
+                    <div class="result-display" id="result-display">
+                        <div class="team-card hidden" id="team-card">
+                            <div class="result-glow"></div>
+                            <div class="team-card-inner">
+                                <div class="club-placeholder">⚽</div>
+                                <h2 class="team-name" id="display-team">...</h2>
+                                <p class="league-name" id="display-league">...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-randomize" id="randomize-btn">Randomize</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
